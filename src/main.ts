@@ -3,4 +3,11 @@ import routeModule from "@/routes";
 import storeModule from "@/store";
 
 /* tslint:disable */
-new Medusa({ routeModule, storeModule });
+new Medusa({
+  routeModule,
+  storeModule,
+  // plugin install
+  install(Vue) {
+    //
+  },
+});
